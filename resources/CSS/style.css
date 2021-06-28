@@ -129,6 +129,7 @@ ul {
 /* Slideshow container */
 .slideshow-container {
     max-width: 800px;
+    max-height: 444px;
     position: relative;
     margin: auto;
   }
