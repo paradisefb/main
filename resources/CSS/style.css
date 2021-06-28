@@ -132,6 +132,8 @@ ul {
     max-height: 444px;
     position: relative;
     margin: auto;
+    border: 3px dashed #FBE251;
+    overflow: hidden;
   }
   
   /* Hide the images by default */
