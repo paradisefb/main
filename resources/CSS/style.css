@@ -35,10 +35,6 @@ a:visited {
     color: white;
 }
 
-p {
-  font-family: cursive;
-}
-
 #hr1 {
     border: 2px solid #FBE251;
     max-width: 444px;
