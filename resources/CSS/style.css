@@ -224,12 +224,18 @@ ul {
     to {opacity: 1}
   }
 
-@media only screen and (max-width: 600px) {
-  .col {
-    display: block;
-  }
+@media only screen and (max-width: 500px) {
+    .col {
+        display: block;
+    }
     
-  h3 {
-    color:#FBE251;
-  }
+    h3 {
+        color:#FBE251;
+    }
+  
+    .footer ul {
+        display: block;
+    }
+    
+    
 }
