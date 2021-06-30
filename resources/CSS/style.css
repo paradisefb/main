@@ -91,9 +91,9 @@ ul {
     text-align: center;
     display: inline-block;
     border-radius: 5px;
-    margin: 10px 20px;
+    margin: 5% auto;
     width: 400px;
-    height: 230px;
+    height: auto;
 }
 
 .col-cs {
