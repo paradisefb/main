@@ -26,3 +26,44 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+
+
+function copy() {
+  var name, bank, acc, tel, feedback, reg, mutate, choose;
+  name = document.getElementById("name").value;
+  bank = document.getElementById("bank").value;
+  acc = document.getElementById("acc").value;
+  tel = document.getElementById("tel").value;
+  choose = document.getElementById("choose").value;
+  feedback = document.getElementById("feedback");
+  document.getElementById("reg").style.display = "none";
+  feedback.style.display = "inline-block";
+  feedback.innerHTML = "*Welcome to PARADISE ONLINE*" + "\nFull Name : " + name + "\nBank Name : " + bank + "\nBank Number : " + acc + "\nRecommend Number : " + tel + "\nGame : " + choose;
+  document.getElementById("mutate").innerHTML = "Send to Our CUSTOMER SERVICE";
+  document.querySelector("#clipboard").style.visibility = "visible";
+}
+
+function clipboard() {
+  feedback.select();
+  feedback.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied");
+}
+
+document.getElementById("btn").addEventListener('click', copy);
+document.getElementById("clipboard").addEventListener('click', clipboard);
