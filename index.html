@@ -2,15 +2,14 @@
     <head>
         <title>PARADISE ONLINE</title>
         <link rel="stylesheet" href="resources/CSS/style.css">
-        <link rel="shortcut icon" type="image/jpg" href="resources/Images/slot-machine.png">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/jpg" href="resources/Images/slot-machine.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
         <script src="resources/JS/script.js" defer></script>
     </head>
     <body>
         <div class="header">
             <img src="resources/Images/logo.png" id="logo">
-            <h1>PARADISE ONLINE</h1>
+            <h1>PARADISE</h1>
         </div>
         <hr id="hr1">
         <!-- Slideshow container -->
@@ -30,20 +29,18 @@
             <div class="mySlides fade">
                 <div class="numbertext">3 / 10</div>
                 <img src="resources/Post/img (3).jpg" style="width:100%">
-
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 10</div>
                 <img src="resources/Post/img (4).jpg" style="width:100%">
-
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">5 / 10</div>
                 <img src="resources/Post/img (5).jpg" style="width:100%">
             </div>
-            
+
             <div class="mySlides fade">
                 <div class="numbertext">6 / 10</div>
                 <img src="resources/Post/img (6).jpg" style="width:100%">
@@ -87,6 +84,48 @@
             <span class="dot" onclick="currentSlide(8)"></span>
             <span class="dot" onclick="currentSlide(9)"></span>
             <span class="dot" onclick="currentSlide(10)"></span>
+
+        </div>
+        <div class="register">
+            <h2 id="mutate">REGISTER FORM</h2>
+            <form id="reg">
+                <div class="form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name">                
+                </div>
+                <div class="form">
+                    <label for="bank">Bank Name</label>
+                    <input type="text" id="bank">               
+                </div>  
+                <div class="form">
+                    <label for="acc">Bank Number</label>
+                    <input type="number" id="acc">                  
+                </div>
+                <div class="form">
+                    <label for="acc">Recommend Number</label>
+                    <input type="tel" id="tel" placeholder="(OPTIONAL)">                  
+                </div>
+                <div class="form">
+                    <label>List Game</label>
+                    <select id="choose">
+                        <option value="" selected></option>
+                        <option value="918KISS">918KISS</option>
+                        <option value="MEGA888">MEGA888</option>
+                        <option value="PUSSY888">PUSSY888</option>
+                        <option value="XE88">XE88</option>
+                        <option value="SCR888">SCR888</option>
+                        <option value="EVO888">EVO888</option>
+                        <option value="JOKER">JOKER</option>
+                        <option value="NEWTOWN">NEWTOWN</option>
+                    </select>
+                <input type="button" id="btn" value="Create">
+                </div>
+                
+            </form>
+            <textarea id="feedback" rows="4" cols="5" style="resize: none"></textarea>
+            <div id="join">
+                <button id="clipboard">Copy it!</button>
+            </div>
         </div>
         <div class="main">
             <h2>CUSTOMER SERVICE</h2>
@@ -138,7 +177,6 @@
                 <li class="game"><img src="resources/Images/evo-90px.png"></li>
                 <li class="game"><img src="resources/Images/joker-90px.png"></li>
                 <li class="game"><img src="resources/Images/newtown-90px.png"></li>
-            </ul>
             </ul>
         </div>
     </body>
