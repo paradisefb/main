@@ -51,3 +51,4 @@ function clipboard() {
 
 document.getElementById("btn").addEventListener('click', copy);
 document.getElementById("clipboard").addEventListener('click', clipboard);
+console.log("Create by : F\'kn")
