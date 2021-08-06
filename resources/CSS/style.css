@@ -170,14 +170,18 @@ ul {
 }
 
 .footer {
-  width: 950px;
+  width: 100%;
+}
+.footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 auto;
+  padding-inline-start: 0;
 }
 
 .game {
-  display:inline-block;
-  position: relative;
-  right: 25px;
   width: 90px;
   height: 60px;
   margin: 0 5px;
@@ -293,7 +297,3 @@ h3 {
   color:#FBE251;
 }
 
-.footer ul {
-  display: block;
-}
-}
